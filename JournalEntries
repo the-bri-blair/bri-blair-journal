@@ -1,0 +1,54 @@
+{
+  "name": "JournalEntry",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the journal entry"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "Short teaser/summary"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full markdown content of the entry"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "reflections",
+        "memory",
+        "philosophy",
+        "solitude",
+        "dreams",
+        "observations"
+      ],
+      "default": "reflections"
+    },
+    "cover_image": {
+      "type": "string",
+      "description": "URL to cover image"
+    },
+    "reading_time": {
+      "type": "number",
+      "description": "Estimated reading time in minutes"
+    },
+    "published": {
+      "type": "boolean",
+      "default": true
+    },
+    "published_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}
