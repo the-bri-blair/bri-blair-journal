@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bri Blair's Journal | Journal</title>
+    <style>
+      :root { --bg:#120507; --card:#220a0e; --line:#5d1e2a; --text:#ffeef1; --muted:#d8a7af; --accent:#ff4b68; }
+      * { box-sizing:border-box; } body { margin:0; font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); }
+      .container { width:min(1100px,92vw); margin:0 auto; }
+      .nav-wrap { position:sticky; top:0; background:rgba(18,5,7,.93); border-bottom:1px solid var(--line); }
+      nav { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+      .brand { color:var(--text); text-decoration:none; font-weight:800; } .brand span { color:var(--accent); }
+      .menu { display:flex; gap:1rem; flex-wrap:wrap; } .menu a { color:var(--muted); text-decoration:none; } .menu a.active,.menu a:hover { color:var(--text); }
+      main { padding:3rem 0 4rem; }
+      h1 { font-size:clamp(2rem,6vw,4rem); margin:0 0 .5rem; }
+      .lead { color:var(--muted); max-width:75ch; }
+      .posts { margin-top:1.5rem; display:grid; gap:.9rem; }
+      .post { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem; }
+      .post .meta { color:var(--muted); font-size:.9rem; margin-bottom:.4rem; }
+      .post h2 { margin:.2rem 0; }
+      .post p { margin:0; color:var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div class="nav-wrap"><nav class="container"><a class="brand" href="index.html">Bri <span>Blair's Journal</span></a><div class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="resume.html">Resume</a><a class="active" href="journal.html">Journal</a><a href="anti-resume.html">Anti Resume</a></div></nav></div>
+
+    <main class="container">
+      <h1>Journal</h1>
+      <p class="lead">Starter page for your writing. Send me your journal structure/details next, and I can build this into exactly what you want.</p>
+      <section class="posts">
+        <article class="post">
+          <div class="meta">April 14, 2026 · Reflection</div>
+          <h2>On Starting Before You Feel Ready</h2>
+          <p>A placeholder post card that you can replace with your real writing entries later.</p>
+        </article>
+        <article class="post">
+          <div class="meta">March 29, 2026 · Memory</div>
+          <h2>What I Keep and What I Release</h2>
+          <p>Another sample card so the journal page already has structure and style.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
