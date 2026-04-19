@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bri Blair's Journal | Resume</title>
+    <style>
+      :root { --bg:#120507; --card:#220a0e; --line:#5d1e2a; --text:#ffeef1; --muted:#d8a7af; --accent:#ff4b68; }
+      * { box-sizing:border-box; } body { margin:0; font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); }
+      .container { width:min(1000px,92vw); margin:0 auto; }
+      .nav-wrap { position:sticky; top:0; background:rgba(18,5,7,.93); border-bottom:1px solid var(--line); }
+      nav { min-height:70px; display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+      .brand { color:var(--text); text-decoration:none; font-weight:800; } .brand span { color:var(--accent); }
+      .menu { display:flex; gap:1rem; flex-wrap:wrap; } .menu a { color:var(--muted); text-decoration:none; } .menu a.active,.menu a:hover { color:var(--text); }
+      main { padding:3rem 0 4rem; }
+      h1 { font-size:clamp(2rem,6vw,3.8rem); margin:0 0 .5rem; }
+      .lead { color:var(--muted); }
+      .timeline { margin-top:1.4rem; display:grid; gap:.9rem; }
+      .item { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem; }
+      .top { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:.3rem; }
+      .role { font-weight:700; } .date { color:var(--accent); font-weight:700; }
+      ul { margin:.4rem 0 0; color:var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div class="nav-wrap"><nav class="container"><a class="brand" href="index.html">Bri <span>Blair's Journal</span></a><div class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="resume.html">Resume</a><a href="journal.html">Journal</a><a href="anti-resume.html">Anti Resume</a></div></nav></div>
+    <main class="container">
+      <h1>Resume</h1>
+      <p class="lead">A place to highlight your most important experience and accomplishments.</p>
+
+      <section class="timeline">
+        <article class="item">
+          <div class="top"><div class="role">Senior Content Strategist · Example Company</div><div class="date">2024 – Present</div></div>
+          <ul>
+            <li>Led cross-platform storytelling strategy for high-impact campaigns.</li>
+            <li>Built editorial systems that improved publishing consistency and speed.</li>
+            <li>Mentored junior writers and standardized quality review process.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="top"><div class="role">Communications Lead · Example Org</div><div class="date">2021 – 2024</div></div>
+          <ul>
+            <li>Created public-facing narrative for launches, press, and community updates.</li>
+            <li>Wrote thought leadership pieces used across web and social channels.</li>
+            <li>Partnered with design/product teams to improve message clarity.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="top"><div class="role">Writer & Research Associate · Example Lab</div><div class="date">2019 – 2021</div></div>
+          <ul>
+            <li>Published internal and external writing on culture, policy, and behavior.</li>
+            <li>Synthesized qualitative research into executive-ready reports.</li>
+            <li>Supported workshop facilitation and community storytelling programs.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
