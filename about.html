@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bri Blair's Journal | About</title>
+    <style>
+      :root { --bg:#120507; --card:#220a0e; --line:#5d1e2a; --text:#ffeef1; --muted:#d8a7af; --accent:#ff4b68; }
+      * { box-sizing:border-box; }
+      body { margin:0; font-family:Inter,system-ui,sans-serif; color:var(--text); background:var(--bg); }
+      .container { width:min(1100px,92vw); margin:0 auto; }
+      .nav-wrap { position:sticky; top:0; background:rgba(18,5,7,.93); border-bottom:1px solid var(--line); }
+      nav { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+      .brand { color:var(--text); text-decoration:none; font-weight:800; }
+      .brand span { color:var(--accent); }
+      .menu { display:flex; gap:1rem; flex-wrap:wrap; }
+      .menu a { color:var(--muted); text-decoration:none; }
+      .menu a.active,.menu a:hover { color:var(--text); }
+      main { padding:3rem 0 4rem; }
+      h1 { font-size:clamp(2rem,6vw,4rem); margin:0 0 .8rem; }
+      .lead { color:var(--muted); max-width:72ch; }
+      .layout { display:grid; grid-template-columns:1.3fr 1fr; gap:1rem; margin-top:1.6rem; }
+      .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:1rem; }
+      .photos { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; }
+      .photo { min-height:180px; border-radius:12px; border:1px dashed #8f3243; display:grid; place-items:center; color:var(--muted); }
+      .socials { margin:0; padding-left:1rem; }
+      .socials a { color:#ffd7de; }
+      @media (max-width:860px){ .layout { grid-template-columns:1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="nav-wrap"><nav class="container"><a class="brand" href="index.html">Bri <span>Blair's Journal</span></a><div class="menu"><a href="index.html">Home</a><a class="active" href="about.html">About</a><a href="resume.html">Resume</a><a href="journal.html">Journal</a><a href="anti-resume.html">Anti Resume</a></div></nav></div>
+    <main class="container">
+      <h1>About Bri</h1>
+      <p class="lead">Use this page to add your bio, photos, and social links. Replace the placeholder text below with your full story.</p>
+      <div class="layout">
+        <section class="card">
+          <h2>Bio</h2>
+          <p>
+            Hi, I'm Bri Blair. I'm a writer and reflective thinker documenting my growth through essays,
+            journal entries, and personal criticism. I care about honest storytelling and thoughtful conversation.
+          </p>
+          <p>
+            <strong>Tip:</strong> replace this with your full bio (background, passions, goals, and what this site means to you).
+          </p>
+        </section>
+        <aside class="card">
+          <h2>Social links</h2>
+          <ul class="socials">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Email me</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <section class="card" style="margin-top:1rem">
+        <h2>Photos</h2>
+        <div class="photos">
+          <div class="photo">Add photo 1</div>
+          <div class="photo">Add photo 2</div>
+          <div class="photo">Add photo 3</div>
+          <div class="photo">Add photo 4</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
