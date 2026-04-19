@@ -4,41 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bri Blair's Journal | Home</title>
-    <meta name="description" content="Bri Blair's Journal homepage and navigation hub." />
-    <style>
-      :root {
-        --bg: #120507;
-        --card: #210a0e;
-        --line: #5d1e2a;
-        --text: #ffeef1;
-        --muted: #d8a7af;
-        --accent: #ff4b68;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        color: var(--text);
-        background: radial-gradient(circle at 10% 10%, rgba(255,75,104,.18), transparent 30%), var(--bg);
-      }
-      .container { width: min(1100px, 92vw); margin: 0 auto; }
-      .nav-wrap { position: sticky; top: 0; background: rgba(18,5,7,.9); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-      nav { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-      .brand { font-weight: 800; text-decoration: none; color: var(--text); }
-      .brand span { color: var(--accent); }
-      .menu { display: flex; gap: 1rem; flex-wrap: wrap; }
-      .menu a { color: var(--muted); text-decoration: none; font-size: .95rem; }
-      .menu a.active, .menu a:hover { color: var(--text); }
-      main { padding: 4.5rem 0; }
-      h1 { font-size: clamp(2.5rem, 7vw, 4.8rem); margin: 0 0 1rem; }
-      .lead { color: var(--muted); max-width: 70ch; }
-      .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin-top: 2rem; }
-      .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 1rem; }
-      .card h2 { margin-top: 0; }
-      .btn { display:inline-block; margin-top:.8rem; padding:.65rem 1rem; border-radius:999px; text-decoration:none; color:#fff; background: linear-gradient(120deg,#ff4b68,#b9122e); }
-      footer { border-top: 1px solid var(--line); padding: 1.5rem 0 2.4rem; color: var(--muted); }
-      @media (max-width: 820px){ .grid { grid-template-columns: 1fr; } }
-    </style>
+    <meta name="description" content="Bri Blair's Journal - writer, thinker, and personal archive." />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="nav-wrap">
@@ -55,39 +22,26 @@
     </div>
 
     <main class="container">
-      <h1>Welcome to Bri Blair's Journal</h1>
+      <div class="eyebrow">Writer · Thinker · Personal Archive</div>
+      <h1>Bri Blair</h1>
       <p class="lead">
-        This is the homepage for my personal writing and career archive. Use the navigation at the top
-        to visit each page: About, Resume, Journal, and Anti Resume.
+        Essays, reflections, and long-form notes on growth, identity, and everyday life. Use the pages above
+        to explore my bio, formal work, journal writing, and the lessons I learned the hard way.
       </p>
+      <p><a class="btn primary" href="journal.html">Read the Journal</a></p>
 
-      <section class="grid">
-        <article class="card">
-          <h2>About</h2>
-          <p>Add your bio, favorite photos, and links to social media profiles.</p>
-          <a class="btn" href="about.html">Go to About</a>
-        </article>
-        <article class="card">
-          <h2>Resume</h2>
-          <p>Showcase major work experience, key accomplishments, and career highlights.</p>
-          <a class="btn" href="resume.html">Go to Resume</a>
-        </article>
-        <article class="card">
-          <h2>Journal</h2>
-          <p>A dedicated place for your posts and ideas. We can add full details next.</p>
-          <a class="btn" href="journal.html">Go to Journal</a>
-        </article>
-        <article class="card">
-          <h2>Anti Resume</h2>
-          <p>Document failures and shortcomings to recognize growth and lessons learned.</p>
-          <a class="btn" href="anti-resume.html">Go to Anti Resume</a>
-        </article>
+      <section>
+        <h2>Navigate the site</h2>
+        <div class="grid-2">
+          <article class="card"><h3>About</h3><p>My story, photos, and social links.</p><p><a href="about.html">Open About →</a></p></article>
+          <article class="card"><h3>Resume</h3><p>Important experience, impact, and milestones.</p><p><a href="resume.html">Open Resume →</a></p></article>
+          <article class="card"><h3>Journal</h3><p>Latest writing and thought pieces.</p><p><a href="journal.html">Open Journal →</a></p></article>
+          <article class="card"><h3>Anti Resume</h3><p>Failures, misses, and what they taught me.</p><p><a href="anti-resume.html">Open Anti Resume →</a></p></article>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">© <span id="year"></span> Bri Blair's Journal</div>
-    </footer>
+    <footer><div class="container">© <span id="year"></span> Bri Blair's Journal</div></footer>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
