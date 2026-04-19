@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bri Blair's Journal | Home</title>
-    <meta name="description" content="Bri Blair's Journal - writer, thinker, and personal archive." />
+    <meta name="description" content="Bri Blair's Journal — red editorial homepage." />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,34 +12,43 @@
       <nav class="container">
         <a class="brand" href="index.html">Bri <span>Blair's Journal</span></a>
         <div class="menu">
-          <a class="active" href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="resume.html">Resume</a>
-          <a href="journal.html">Journal</a>
-          <a href="anti-resume.html">Anti Resume</a>
+          <a class="active" href="index.html">Home</a><a href="about.html">About</a><a href="resume.html">Resume</a><a href="journal.html">Journal</a><a href="anti-resume.html">Anti Resume</a>
         </div>
       </nav>
     </div>
 
-    <main class="container">
-      <div class="eyebrow">Writer · Thinker · Personal Archive</div>
-      <h1>Bri Blair</h1>
-      <p class="lead">
-        Essays, reflections, and long-form notes on growth, identity, and everyday life. Use the pages above
-        to explore my bio, formal work, journal writing, and the lessons I learned the hard way.
-      </p>
-      <p><a class="btn primary" href="journal.html">Read the Journal</a></p>
-
+    <main class="container hero">
       <section>
-        <h2>Navigate the site</h2>
-        <div class="grid-2">
-          <article class="card"><h3>About</h3><p>My story, photos, and social links.</p><p><a href="about.html">Open About →</a></p></article>
-          <article class="card"><h3>Resume</h3><p>Important experience, impact, and milestones.</p><p><a href="resume.html">Open Resume →</a></p></article>
-          <article class="card"><h3>Journal</h3><p>Latest writing and thought pieces.</p><p><a href="journal.html">Open Journal →</a></p></article>
-          <article class="card"><h3>Anti Resume</h3><p>Failures, misses, and what they taught me.</p><p><a href="anti-resume.html">Open Anti Resume →</a></p></article>
+        <div class="eyebrow">Writer · Critic · Personal Archive</div>
+        <h1>Bri Blair</h1>
+        <p class="lead">
+          A living archive of essays, reflections, notes, and honest revisions of who I am becoming.
+          This site is structured like a writing studio: about, formal experience, journal work, and lessons from failure.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="journal.html">Read Journal</a>
+          <a class="btn" href="about.html">Read About</a>
         </div>
       </section>
+      <aside class="hero-panel">
+        <article class="card">
+          <h3>Start here</h3>
+          <p><strong>About</strong> — bio, photos, and social links.</p>
+          <p><strong>Resume</strong> — roles and meaningful contributions.</p>
+          <p><strong>Journal</strong> — writings and thought pieces.</p>
+          <p><strong>Anti Resume</strong> — failures, misses, and growth notes.</p>
+        </article>
+      </aside>
     </main>
+
+    <section class="section">
+      <div class="container grid-2">
+        <article class="card"><h3>About</h3><p>See the personal story behind the writing.</p><p><a href="about.html">Open page →</a></p></article>
+        <article class="card"><h3>Resume</h3><p>Review formal experience and outcomes.</p><p><a href="resume.html">Open page →</a></p></article>
+        <article class="card"><h3>Journal</h3><p>Dive into recent essays and reflections.</p><p><a href="journal.html">Open page →</a></p></article>
+        <article class="card"><h3>Anti Resume</h3><p>Study the failures that built better instincts.</p><p><a href="anti-resume.html">Open page →</a></p></article>
+      </div>
+    </section>
 
     <footer><div class="container">© <span id="year"></span> Bri Blair's Journal</div></footer>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
