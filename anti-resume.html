@@ -4,43 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bri Blair's Journal | Anti Resume</title>
-    <style>
-      :root { --bg:#120507; --card:#220a0e; --line:#5d1e2a; --text:#ffeef1; --muted:#d8a7af; --accent:#ff4b68; }
-      * { box-sizing:border-box; } body { margin:0; font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); }
-      .container { width:min(1000px,92vw); margin:0 auto; }
-      .nav-wrap { position:sticky; top:0; background:rgba(18,5,7,.93); border-bottom:1px solid var(--line); }
-      nav { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:1rem; }
-      .brand { color:var(--text); text-decoration:none; font-weight:800; } .brand span { color:var(--accent); }
-      .menu { display:flex; gap:1rem; flex-wrap:wrap; } .menu a { color:var(--muted); text-decoration:none; } .menu a.active,.menu a:hover { color:var(--text); }
-      main { padding:3rem 0 4rem; }
-      h1 { font-size:clamp(2rem,6vw,3.8rem); margin:0 0 .5rem; }
-      .lead { color:var(--muted); max-width:70ch; }
-      .list { margin-top:1.4rem; display:grid; gap:.8rem; }
-      .item { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem; }
-      .item h2 { margin:.2rem 0; font-size:1.2rem; }
-      .item p { margin:0; color:var(--muted); }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="nav-wrap"><nav class="container"><a class="brand" href="index.html">Bri <span>Blair's Journal</span></a><div class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="resume.html">Resume</a><a href="journal.html">Journal</a><a class="active" href="anti-resume.html">Anti Resume</a></div></nav></div>
 
     <main class="container">
-      <h1>Anti Resume</h1>
-      <p class="lead">A page to honestly document failures, missed opportunities, and lessons learned. Growth deserves receipts too.</p>
+      <div class="eyebrow">Anti Resume</div>
+      <h1>What didn’t work.</h1>
+      <p class="lead">Because failures, misses, and shortcomings matter too.</p>
 
-      <section class="list">
-        <article class="item">
-          <h2>Project launch that missed the mark</h2>
-          <p>What happened, what I misunderstood, and what I changed afterward.</p>
-        </article>
-        <article class="item">
-          <h2>Role I wasn't ready for</h2>
-          <p>Where I overreached, what I learned about preparation, and how I rebuilt confidence.</p>
-        </article>
-        <article class="item">
-          <h2>Opportunity I passed on too quickly</h2>
-          <p>Reflection on fear, timing, and how I approach decisions now.</p>
-        </article>
+      <section>
+        <div class="card">
+          <p class="meta">Missed Launch</p>
+          <h3>Project launch that missed the mark</h3>
+          <p>What failed, what I misunderstood, and how I adapted my process afterward.</p>
+        </div>
+        <div class="card" style="margin-top:.9rem">
+          <p class="meta">Overreach</p>
+          <h3>Role I wasn't ready for</h3>
+          <p>A reflection on gaps in preparation and the systems I built to grow from it.</p>
+        </div>
+        <div class="card" style="margin-top:.9rem">
+          <p class="meta">Missed Opportunity</p>
+          <h3>Opportunity I passed on too quickly</h3>
+          <p>How fear shaped the decision and what changed in my decision-making framework.</p>
+        </div>
       </section>
     </main>
   </body>
