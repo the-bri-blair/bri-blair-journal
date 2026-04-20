@@ -126,13 +126,59 @@ main small,
 
 @media (pointer: fine) {
   body {
-    cursor: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 4L31 20L20 22L15 34L7 4Z' fill='%235c0012' stroke='%23fff0f3' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M18.5 21.5L24 33' stroke='%23fff0f3' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") 7 4, auto;
+    cursor: none;
   }
 
   a,
   button,
-  .btn {
-    cursor: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 5L33 21L21 24L16 36L8 5Z' fill='%237a0019' stroke='%23fff0f3' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M19.5 23L25.5 35' stroke='%23fff0f3' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") 8 5, pointer;
+  .btn,
+  .card {
+    cursor: none;
+  }
+
+  #cursor-dot {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background: #7a0019;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
+  }
+
+  #cursor-ring {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(122, 0, 25, 0.55);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition:
+      width 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 0.3s,
+      opacity 0.2s;
+  }
+
+  body.hovering #cursor-ring {
+    width: 48px;
+    height: 48px;
+    border-color: rgba(122, 0, 25, 0.85);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+
+  #cursor-dot,
+  #cursor-ring {
+    display: none;
   }
 }
 
