@@ -182,3 +182,18 @@ main small,
   }
 }
 
+@media (pointer: fine) {
+  #cursor-dot {
+    background: #fff0f3 !important;
+  }
+
+  #cursor-ring {
+    border-color: rgba(255, 240, 243, 0.65) !important;
+  }
+
+  body.hovering #cursor-ring {
+    border-color: rgba(255, 240, 243, 0.95) !important;
+  }
+}
+
+
