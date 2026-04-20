@@ -45,6 +45,7 @@ nav {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
   letter-spacing: .2px;
+  font-size: 1.35rem;   /* temporary to prove it changed */
 }
 .brand span { color: var(--accent); }
 .menu { display: flex; gap: 1.1rem; flex-wrap: wrap; }
