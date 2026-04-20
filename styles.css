@@ -106,7 +106,6 @@ footer { border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center 22% !important;
-
   border-radius: 999px;
   border: 2px solid color-mix(in srgb, var(--accent) 65%, #fff 15%);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
