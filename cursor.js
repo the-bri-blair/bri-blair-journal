@@ -35,3 +35,23 @@ document.querySelectorAll('a, button, .btn, .card').forEach(function (element) {
     document.body.classList.remove('hovering');
   });
 });
+
+const gallery = document.getElementById('homePhotoGallery');
+const leftArrow = document.querySelector('.gallery-arrow-left');
+const rightArrow = document.querySelector('.gallery-arrow-right');
+
+if (gallery && leftArrow && rightArrow) {
+  leftArrow.addEventListener('click', function () {
+    gallery.scrollBy({
+      left: -340,
+      behavior: 'smooth'
+    });
+  });
+
+  rightArrow.addEventListener('click', function () {
+    gallery.scrollBy({
+      left: 340,
+      behavior: 'smooth'
+    });
+  });
+}
