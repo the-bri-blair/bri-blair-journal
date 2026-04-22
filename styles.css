@@ -195,20 +195,37 @@ main small,
     border-color: rgba(255, 240, 243, 0.95) !important;
   }
 }
+.hero > section,
+.hero-panel,
+.gallery-shell,
+.home-photo-gallery {
+  min-width: 0;
+}
+
 .gallery-shell {
   position: relative;
+  width: 100%;
+  max-width: 100%;
   margin-top: 1.6rem;
+  overflow: hidden;
 }
 
 .home-photo-gallery {
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 100%;
+  max-width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
   padding: 0.5rem 3rem 0.9rem;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scrollbar-color: var(--accent) transparent;
+  scrollbar-width: none;
+}
+
+.home-photo-gallery::-webkit-scrollbar {
+  display: none;
 }
 
 .gallery-item {
