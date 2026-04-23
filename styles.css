@@ -233,8 +233,8 @@ body {
 
 .gallery-item {
   position: relative;
-  flex: 0 0 250px;
-  height: 340px;
+  flex: 0 0 260px;
+  height: 380px;
   margin: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -243,20 +243,7 @@ body {
   scroll-snap-align: start;
 }
 
-.gallery-wide {
-  flex-basis: 390px;
-  height: 280px;
-}
 
-.gallery-tall {
-  flex-basis: 250px;
-  height: 390px;
-}
-
-.gallery-small {
-  flex-basis: 230px;
-  height: 300px;
-}
 
 .gallery-item img {
   width: 100%;
@@ -324,11 +311,8 @@ body {
     padding-right: 2.8rem;
   }
 
-  .gallery-item,
-  .gallery-wide,
-  .gallery-tall,
-  .gallery-small {
+  .gallery-item {
     flex-basis: 72vw;
-    height: 340px;
+    height: 420px;
   }
 }
