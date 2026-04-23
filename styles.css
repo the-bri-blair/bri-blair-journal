@@ -329,5 +329,131 @@ main small,
     height: 340px;
   }
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.home-gallery-section {
+  padding: 0 0 3rem;
+  overflow: hidden;
+}
+
+.gallery-shell {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.home-photo-gallery {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 3rem 0.9rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.home-photo-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 0 0 250px;
+  height: 340px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  scroll-snap-align: start;
+}
+
+.gallery-wide {
+  flex-basis: 390px;
+  height: 280px;
+}
+
+.gallery-tall {
+  flex-basis: 250px;
+  height: 390px;
+}
+
+.gallery-small {
+  flex-basis: 230px;
+  height: 300px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 1rem;
+  color: var(--text);
+  background: rgba(20, 6, 8, 0.76);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.7);
+}
+
+.gallery-item:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(20, 6, 8, 0.82);
+  color: var(--text);
+  font-size: 1.9rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  transform: translateY(-50%);
+}
+
+.gallery-arrow:hover {
+  background: var(--accent-2);
+}
+
+.gallery-arrow-left {
+  left: 0.35rem;
+}
+
+.gallery-arrow-right {
+  right: 0.35rem;
+}
+
+@media (max-width: 700px) {
+  .home-photo-gallery {
+    padding-left:
 
 
