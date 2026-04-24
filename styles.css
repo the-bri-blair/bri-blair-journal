@@ -316,3 +316,8 @@ body {
     height: 420px;
   }
 }
+.home-divider {
+  height: 1px;
+  background: color-mix(in srgb, var(--line) 70%, transparent);
+  margin: 0 0 2rem;
+}
