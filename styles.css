@@ -321,3 +321,68 @@ body {
   background: color-mix(in srgb, var(--line) 70%, transparent);
   margin: 0 0 2rem;
 }
+.about-page {
+  padding-top: 3.2rem;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: stretch;
+  padding-bottom: 3rem;
+}
+
+.about-hero-photo {
+  min-height: 620px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.about-hero-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.about-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.about-hero-copy h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.95;
+  margin: 0.5rem 0 1.5rem;
+  color: var(--text);
+}
+
+.about-bio-box {
+  background: rgba(255, 78, 109, 0.14);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 8px;
+  padding: 1.25rem;
+  max-width: 34rem;
+}
+
+.about-bio-box p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+@media (max-width: 920px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-photo {
+    min-height: 480px;
+  }
+}
